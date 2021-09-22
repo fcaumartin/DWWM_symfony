@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<h1>Liste des clients</h1>
+
+    {% for cli in clients %}
+        <div>
+            {{ cli.nom }} {{ cli.prenom }}
+        </div>
+    {% endfor %}
+
+{% endblock %}
